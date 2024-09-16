@@ -1,0 +1,125 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /usr/local/bin:/Users/pascal/work/study/studyTaro/node_modules/.bin:/Users/pascal/work/study/node_modules/.bin:/Users/pascal/work/node_modules/.bin:/Users/pascal/node_modules/.bin:/Users/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/Users/pascal/.rbenv/shims:/Users/pascal/.rbenv/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/pascal/software/zulu11.56.19-ca-jdk11.0.15-macosx_x64/zulu-11.jdk/Contents/Home/bin:/Users/pascal/Library/Android/sdk/emulator:/Users/pascal/Library/Android/sdk/tools:/Users/pascal/Library/Android/sdk/tools/bin:/Users/pascal/Library/Android/sdk/platform-tools:/Users/pascal/software/flutter/bin:/usr/local/mysql/bin:/Applications/DevEco-Studio.app/Contents/sdk/default/openharmony/toolchains:/Users/pascal/Library/Android/sdk/emulator:/Users/pascal/Library/Android/sdk/tools:/Users/pascal/Library/Android/sdk/tools/bin:/Users/pascal/Library/Android/sdk/platform-tools
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  20.11.1
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  TypeError [ERR_INVALID_URL]: Invalid URL
+      at Url.parse (node:url:416:17)
+      at Object.urlParse [as parse] (node:url:141:13)
+      at module.exports.module.exports (/usr/local/lib/node_modules/yarn/lib/cli.js:71855:21)
+      at urlParts (/usr/local/lib/node_modules/yarn/lib/cli.js:31657:75)
+      at NpmRegistry.isRequestToRegistry (/usr/local/lib/node_modules/yarn/lib/cli.js:31700:19)
+      at NpmRegistry.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:31732:31)
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:310:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:328:14
+      at new Promise (<anonymous>)
+
+npm manifest: 
+  {
+    "name": "myApp0915",
+    "version": "1.0.0",
+    "private": true,
+    "description": "study taro",
+    "templateInfo": {
+      "name": "default",
+      "typescript": true,
+      "css": "None",
+      "framework": "React"
+    },
+    "scripts": {
+      "build:weapp": "taro build --type weapp",
+      "build:swan": "taro build --type swan",
+      "build:alipay": "taro build --type alipay",
+      "build:tt": "taro build --type tt",
+      "build:h5": "taro build --type h5",
+      "build:rn": "taro build --type rn",
+      "build:qq": "taro build --type qq",
+      "build:jd": "taro build --type jd",
+      "build:quickapp": "taro build --type quickapp",
+      "build:harmony-hybrid": "taro build --type harmony-hybrid",
+      "dev:weapp": "npm run build:weapp -- --watch",
+      "dev:swan": "npm run build:swan -- --watch",
+      "dev:alipay": "npm run build:alipay -- --watch",
+      "dev:tt": "npm run build:tt -- --watch",
+      "dev:h5": "npm run build:h5 -- --watch",
+      "dev:rn": "npm run build:rn -- --watch",
+      "dev:qq": "npm run build:qq -- --watch",
+      "dev:jd": "npm run build:jd -- --watch",
+      "dev:quickapp": "npm run build:quickapp -- --watch",
+      "dev:harmony-hybrid": "npm run build:harmony-hybrid -- --watch",
+      "test": "jest"
+    },
+    "browserslist": [
+      "last 3 versions",
+      "Android >= 4.1",
+      "ios >= 8"
+    ],
+    "author": "",
+    "dependencies": {
+      "@babel/runtime": "^7.21.5",
+      "@tarojs/components": "3.6.35",
+      "@tarojs/helper": "3.6.35",
+      "@tarojs/plugin-platform-weapp": "3.6.35",
+      "@tarojs/plugin-platform-alipay": "3.6.35",
+      "@tarojs/plugin-platform-tt": "3.6.35",
+      "@tarojs/plugin-platform-swan": "3.6.35",
+      "@tarojs/plugin-platform-jd": "3.6.35",
+      "@tarojs/plugin-platform-qq": "3.6.35",
+      "@tarojs/plugin-platform-h5": "3.6.35",
+      "@tarojs/plugin-platform-harmony-hybrid": "3.6.35",
+      "@tarojs/runtime": "3.6.35",
+      "@tarojs/shared": "3.6.35",
+      "@tarojs/taro": "3.6.35",
+      "@tarojs/plugin-framework-react": "3.6.35",
+      "@tarojs/react": "3.6.35",
+      "react-dom": "^18.0.0",
+      "react": "^18.0.0"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.8.0",
+      "@tarojs/cli": "3.6.35",
+      "@types/webpack-env": "^1.13.6",
+      "@tarojs/test-utils-react": "^0.1.1",
+      "@types/react": "^18.0.0",
+      "webpack": "5.78.0",
+      "@tarojs/taro-loader": "3.6.35",
+      "@tarojs/webpack5-runner": "3.6.35",
+      "babel-preset-taro": "3.6.35",
+      "eslint-config-taro": "3.6.35",
+      "eslint": "^8.12.0",
+      "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
+      "react-refresh": "^0.11.0",
+      "eslint-plugin-react": "^7.8.2",
+      "eslint-plugin-import": "^2.12.0",
+      "eslint-plugin-react-hooks": "^4.2.0",
+      "stylelint": "^14.4.0",
+      "@typescript-eslint/parser": "^6.2.0",
+      "@typescript-eslint/eslint-plugin": "^6.2.0",
+      "typescript": "^5.1.0",
+      "tsconfig-paths-webpack-plugin": "^4.1.0",
+      "postcss": "^8.4.18",
+      "ts-node": "^10.9.1",
+      "@types/node": "^18.15.11",
+      "@types/jest": "^29.3.1",
+      "jest": "^29.3.1",
+      "jest-environment-jsdom": "^29.5.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
